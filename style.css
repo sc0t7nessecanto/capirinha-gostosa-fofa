@@ -4,3 +4,21 @@ body {
   font-family: monospace;
 }
 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+}
+
+#sidebar {
+  width: 220px;
+  background: #f0f0f0;
+  padding: 15px;
+  position: fixed;
+  height: 100vh;
+}
+
+main {
+  margin-left: 240px;
+  padding: 20px;
+}
