@@ -12,5 +12,20 @@ index.html
 <h1>arquivo pessoal</h1>
 <p>isso é o começo.</p>
 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>teste</title>
+</head>
+<body>
+  <h1>oi, isso existe</h1>
+</body>
+</html>
+
+
+
+
 </body>
 </html>
