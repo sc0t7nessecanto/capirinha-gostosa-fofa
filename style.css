@@ -1,8 +1,6 @@
 
-<head>
-
 body {
-  background-image: url("https://imgur.com/a/pd4NaGL.jpg");
+  background-image: url("https://i.imgur.com/OoiAPf9.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -11,7 +9,7 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-</head>
+
 
 #sidebar {
   width: 220px;
