@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-<body>
-<div style="background-image: url('https://br.pinterest.com/pin/1019643171903858423/.jpg');">
-</body>
-
-
-</html>
-
-
-
 body {
+  background-image: url("https://imgur.com/a/pd4NaGL.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
   margin: 0;
   font-family: sans-serif;
-  display: flex;
 }
+
 
 #sidebar {
   width: 220px;
