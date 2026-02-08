@@ -82,3 +82,22 @@ main img {
 
 
 cursor: url("https://i.imgur.com/athGUtH.png") 16 16, auto;
+
+
+.particle {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeOut 0.8s linear forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
