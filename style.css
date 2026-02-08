@@ -32,6 +32,20 @@ body {
   height: 100vh;
 }
 
+#sidebar {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+
+  width: 160px;
+  padding: 12px;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255,255,255,0.3);
+
+  font-family: monospace;
+}
+
 main {
   margin-left: 240px;
   padding: 20px;
