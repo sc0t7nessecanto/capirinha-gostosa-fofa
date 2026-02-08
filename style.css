@@ -46,6 +46,17 @@ body {
   font-family: monospace;
 }
 
+#sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
 main {
   margin-left: 240px;
   padding: 20px;
