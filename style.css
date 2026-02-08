@@ -47,5 +47,10 @@ main {
 }
   border: 2px solid red;
 }
+
+main img {
+  display: block;
+  margin-left: 40px !important;
+}
     
 </main>
