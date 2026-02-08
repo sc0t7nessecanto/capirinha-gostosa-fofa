@@ -1,3 +1,16 @@
+.content-box {
+  background: rgba(0, 0, 0, 0.55); /* transparência */
+  color: white;
+  padding: 24px;
+  max-width: 600px;
+  border-radius: 12px;
+
+  /* empurra pra baixo */
+  margin-top: 80px;
+
+  /* acessibilidade */
+  line-height: 1.6;
+}
 
 body {
   background-image: url("https://i.imgur.com/OoiAPf9.jpeg");
