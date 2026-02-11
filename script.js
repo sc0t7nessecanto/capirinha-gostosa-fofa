@@ -1,16 +1,18 @@
 
-<script>
-document.addEventListener("mousemove", (e) => {
-  const particle = document.createElement("div");
-  particle.className = "particle";
+document.addEventListener("mousemove", function (e) {
+  const img = document.createElement("img");
 
-  particle.style.left = e.clientX + "px";
-  particle.style.top = e.clientY + "px";
+  img.src = "https://i.imgur.com/5z2b1lE.png"; // usa UMA imagem que você JÁ SABE que funciona
+  img.style.position = "fixed";
+  img.style.left = e.clientX + "px";
+  img.style.top = e.clientY + "px";
+  img.style.width = "16px";
+  img.style.pointerEvents = "none";
+  img.style.zIndex = "9999";
 
-  document.body.appendChild(particle);
+  document.body.appendChild(img);
 
   setTimeout(() => {
-    particle.remove();
-  }, 800);
+    img.remove();
+  }, 500);
 });
-</script>
