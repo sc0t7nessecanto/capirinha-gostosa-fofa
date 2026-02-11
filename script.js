@@ -26,7 +26,7 @@ let lastTime = 0;
 
 document.addEventListener("mousemove", function (e) {
   const now = Date.now();
-  if (now - lastTime < 70) return; // ↑ aumenta esse número pra mais espaço
+  if (now - lastTime < 100) return; // ↑ aumenta esse número pra mais espaço
   lastTime = now;
 
   const img = document.createElement("img");
