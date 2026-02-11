@@ -1,3 +1,8 @@
+alert("JS carregou");
+
+
+
+
 
 document.addEventListener("mousemove", function (e) {
   const img = document.createElement("img");
