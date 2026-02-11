@@ -21,3 +21,27 @@ document.addEventListener("mousemove", function (e) {
     img.remove();
   }, 500);
 });
+
+let lastTime = 0;
+
+document.addEventListener("mousemove", function (e) {
+  const now = Date.now();
+  if (now - lastTime < 70) return; // ↑ aumenta esse número pra mais espaço
+  lastTime = now;
+
+  const img = document.createElement("img");
+
+  img.src = "https://i.imgur.com/5z2b1lE.png";
+  img.style.position = "fixed";
+  img.style.left = e.clientX + "px";
+  img.style.top = e.clientY + "px";
+  img.style.width = "16px";
+  img.style.pointerEvents = "none";
+  img.style.zIndex = "9999";
+
+  document.body.appendChild(img);
+
+  setTimeout(() => {
+    img.remove();
+  }, 500);
+});
