@@ -1,4 +1,4 @@
-alert("JS carregou");
+alert("Hallo ! :)");
 
 
 
