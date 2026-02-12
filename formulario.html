@@ -1,1 +1,39 @@
 <!DOCTYPE html>
+
+<form id="quiz">
+  <h2>Que tipo de criatura você é?</h2>
+
+  <p>1. Quando algo dá errado, você:</p>
+  <label>
+    <input type="radio" name="q1" value="a">
+    Entra em pânico silencioso
+  </label><br>
+
+  <label>
+    <input type="radio" name="q1" value="b">
+    Finge que foi planejado
+  </label><br>
+
+  <label>
+    <input type="radio" name="q1" value="c">
+    Ri e observa o caos
+  </label>
+
+  <p>2. Sua energia natural:</p>
+  <label>
+    <input type="radio" name="q2" value="a"> Calmo
+  </label><br>
+
+  <label>
+    <input type="radio" name="q2" value="b"> Caótico
+  </label><br>
+
+  <label>
+    <input type="radio" name="q2" value="c"> Misterioso
+  </label>
+
+  <br><br>
+  <button type="button" onclick="verificar()">Verificar</button>
+</form>
+
+<div id="resultado"></div>
