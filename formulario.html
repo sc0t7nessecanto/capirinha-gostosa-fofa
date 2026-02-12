@@ -37,3 +37,31 @@
 </form>
 
 <div id="resultado"></div>
+
+<script>
+function verResultado() {
+  let pontos = {
+    a: 0,
+    b: 0,
+    c: 0
+  };
+
+  const respostas = document.querySelectorAll('input[type="radio"]:checked');
+
+  respostas.forEach(resposta => {
+    pontos[resposta.value]++;
+  });
+
+  let tipo = '';
+
+  if (pontos.a >= pontos.b && pontos.a >= pontos.c) {
+    tipo = 'Você é do tipo contemplativo. Observa o mundo e suspira.';
+  } else if (pontos.b >= pontos.a && pontos.b >= pontos.c) {
+    tipo = 'Você é energia pura. Provavelmente quebrou algo hoje.';
+  } else {
+    tipo = 'Você é misterioso. Ninguém sabe, talvez nem você.';
+  }
+
+  document.getElementById('resultado').innerText = tipo;
+}
+</script>
