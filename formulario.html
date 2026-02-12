@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<style>
+ quiz {
+  background: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+</style>
 
 <form id="quiz">
   <h2>Que tipo de criatura você é?</h2>
@@ -37,31 +53,42 @@
 </form>
 
 <div id="resultado"></div>
-
 <script>
-function verResultado() {
-  let pontos = {
-    a: 0,
-    b: 0,
-    c: 0
-  };
-
-  const respostas = document.querySelectorAll('input[type="radio"]:checked');
-
-  respostas.forEach(resposta => {
-    pontos[resposta.value]++;
-  });
-
-  let tipo = '';
-
-  if (pontos.a >= pontos.b && pontos.a >= pontos.c) {
-    tipo = 'Você é do tipo contemplativo. Observa o mundo e suspira.';
-  } else if (pontos.b >= pontos.a && pontos.b >= pontos.c) {
-    tipo = 'Você é energia pura. Provavelmente quebrou algo hoje.';
-  } else {
-    tipo = 'Você é misterioso. Ninguém sabe, talvez nem você.';
+const resultados = {
+  sombra: {
+    nome: "Entidade da Sombra",
+    texto: "Você observa mais do que age."
+  },
+  caos: {
+    nome: "Fragmento do Caos",
+    texto: "Você age antes de pensar."
+  },
+  vazio: {
+    nome: "Eco do Vazio",
+    texto: "Silêncio também é resposta."
   }
+  // até 20, sem drama
+};
 
-  document.getElementById('resultado').innerText = tipo;
-}
-</script>
+let pontos = {
+  sombra: 0,
+  caos: 0,
+  vazio: 0
+};
+document.querySelectorAll('input[type="radio"]:checked')
+  .forEach(r => {
+    const tipo = r.dataset.tipo;
+    pontos[tipo]++;
+  });
+let final = Object.keys(pontos).reduce((a, b) =>
+  pontos[a] > pontos[b] ? a : b
+);
+
+document.getElementById("resultado").innerHTML =
+  `<h2>${resultados[final].nome}</h2>
+   <p>${resultados[final].texto}</p>`;
+
+<input type="radio" name="q1" data-tipo="caos">
+  </script>
+
+</html>
