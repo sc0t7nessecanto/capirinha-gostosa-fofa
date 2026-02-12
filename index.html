@@ -25,6 +25,15 @@
   width: 300px; /* controla tamanho */
   pointer-events: none; /* não atrapalha clique */
 }
+           @keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.imagem-flutuante {
+  animation: flutuar 4s ease-in-out infinite;
+}
 </style>
     
 </head>
