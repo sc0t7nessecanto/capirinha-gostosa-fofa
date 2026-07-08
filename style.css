@@ -29,7 +29,7 @@ body {
   background: #f0f0f0;
   padding: 15px;
   position: fixed;
-  height: 100vh;
+  height: 90vh;
 }
 
 #sidebar {
@@ -64,7 +64,7 @@ main {
 
 
 <main>
-<img src="https://i.imgur.com/XjObqBQ.jpeg" alt="Olá Mundo!"
+<img src="X" alt="Olá Mundo!"
   main img {
   display: block;
   margin-left: 40px;
