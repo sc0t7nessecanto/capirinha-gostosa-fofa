@@ -80,9 +80,9 @@ main img {
     
 </main>
 
-
+body {
 cursor: url("https://res.cloudinary.com/ae9ux5qk/image/upload/v1783531119/ponteiro1_r3ctju.webp"), auto;
-
+}
 
 .particle {
   position: fixed;
