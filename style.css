@@ -16,28 +16,6 @@
 
 
 body {
-
-  <img src="https://res.cloudinary.com/ae9ux5qk/image/upload/v1783536879/f9f5d8b7_fk5jfb.gif" 
-    class="imagem-flutuante" 
-    alt="colch">
-     width: 100vw;
-      height: auto;
-       max-width: 100px;
-      display: block;
-      object-fit: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
-body {
   background-image: url("https://res.cloudinary.com/ae9ux5qk/image/upload/v1783528136/noite1_vsspbp.webp");
   background-repeat: no-repeat;
   background-position: center;
