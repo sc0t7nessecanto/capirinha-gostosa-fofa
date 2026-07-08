@@ -22,9 +22,9 @@ body {
     alt="colch">
      width: 100vw;
       height: auto;
+       max-width: 100px;
       display: block;
       object-fit: cover;
-
 }
 
 
